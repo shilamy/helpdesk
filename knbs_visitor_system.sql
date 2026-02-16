@@ -366,6 +366,14 @@ ALTER TABLE `visitors`
   MODIFY `VisitorID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
+ALTER TABLE `visitors`
+ADD COLUMN `HostContactName` VARCHAR(100) DEFAULT NULL,
+ADD COLUMN `HostDepartment` VARCHAR(100) DEFAULT NULL,
+ADD COLUMN `HostFloor` VARCHAR(50) DEFAULT NULL,
+ADD COLUMN `HostCallerID` VARCHAR(50) DEFAULT NULL;
+--
+
+--
 -- Constraints for dumped tables
 --
 
